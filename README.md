@@ -12,17 +12,17 @@
 
 **给 AI 一个有立场、对你不友好的身份 — 它的能力量级被解锁。**
 
-通过 5 个批判性角色，从不同维度质疑你的决策/计划/目标，逼出你不敢承认的问题和隐藏风险。
+通过 5 个历史名人的批判性视角，从不同维度质疑你的决策/计划/目标，逼出你不敢承认的问题和隐藏风险。
 
 ### 5 个批判角色
 
-| 角色 | 职责 | 关键问题 |
-|------|------|---------|
-| 🤔 **苏格拉底式追问者** | 逼你把模糊需求说清楚 | 你真的想清楚了吗？ |
-| 🔥 **极度严苛的评审者** | 不给情绪价值，只指硬伤 | 致命缺陷是什么？ |
-| 💰 **带偏见的投资人** | 质疑可行性和 ROI | 为什么我不该投你？ |
-| ⚰️ **死法研究员** | 分析同类尝试的失败案例 | 这赛道过去都怎么死的？ |
-| ⏰ **5年后后悔的你** | 站在未来视角写警告信 | 你会后悔什么？ |
+| 角色 | 职责 | 关键问题 | 代表作 |
+|------|------|---------|--------|
+| 🤔 **苏格拉底**<br/>Socrates | 逼你把模糊需求说清楚 | 你真的想清楚了吗？ | 苏格拉底式提问法 |
+| 🔥 **乔布斯**<br/>Steve Jobs | 不给情绪价值，只指硬伤 | 这是狗屎（This is shit） | 极致产品主义 |
+| 💰 **芒格**<br/>Charlie Munger | 质疑可行性和 ROI | 反过来想，总是反过来想 | 多元思维模型 |
+| ⚰️ **塔勒布**<br/>Nassim Taleb | 分析同类尝试的失败案例 | 脆弱的东西会崩溃 | 《黑天鹅》《反脆弱》 |
+| ⏰ **贝索斯**<br/>Jeff Bezos | 站在未来视角写警告信 | 80岁时你会后悔什么？ | 后悔最小化框架 |
 
 ### 使用场景
 
@@ -40,9 +40,11 @@
    ```
    用绝对理性批判分析这个计划：[你的计划]
    ```
-   或
+   或指定特定角色：
    ```
-   用投资人视角批判：[你的商业计划]
+   用乔布斯视角批判这个产品方案
+   用芒格视角分析这个商业计划
+   用塔勒布视角研究这个赛道的死法
    ```
 
 3. **查看示例**：参考 `examples/example-critique.md`，里面有完整的 AI 写作助手产品批判案例
@@ -53,11 +55,11 @@
 andy-absolute-rational-critique-skill/
 ├── README.md                   # 本文件
 ├── SKILL.md                    # 详细使用指南
-├── role-1-socratic.md          # 苏格拉底式追问者
-├── role-2-harsh-reviewer.md    # 极度严苛的评审者
-├── role-3-biased-investor.md   # 带偏见的投资人
-├── role-4-death-researcher.md  # 死法研究员
-├── role-5-regretful-future.md  # 5年后后悔的你
+├── role-1-socratic.md          # 苏格拉底
+├── role-2-steve-jobs.md        # 乔布斯
+├── role-3-charlie-munger.md    # 芒格
+├── role-4-nassim-taleb.md      # 塔勒布
+├── role-5-jeff-bezos.md        # 贝索斯
 └── examples/
     └── example-critique.md     # 完整示例
 ```
@@ -98,6 +100,14 @@ andy-absolute-rational-critique-skill/
 - **前瞻性后悔**：用"未来后悔"激活损失厌恶心理
 - **历史教训**：用失败案例对抗"我会不一样"的幻觉
 
+### 为什么选这 5 个人？
+
+- **苏格拉底**：西方哲学奠基人，提问法大师
+- **乔布斯**：极致产品主义代表，以严苛著称
+- **芒格**：巴菲特黄金搭档，反向思维大师
+- **塔勒布**：风险研究专家，《黑天鹅》作者
+- **贝索斯**：长期主义代表，后悔最小化框架创始人
+
 ### 贡献
 
 欢迎贡献：
@@ -126,17 +136,17 @@ AI 产品专家，前腾讯/百度 AI 负责人
 
 **Give AI a stance and an adversarial identity — unlock its true potential.**
 
-Use 5 critical roles to challenge your decisions/plans/goals from different angles, forcing you to confront problems and risks you're afraid to admit.
+Use 5 historical figures' critical perspectives to challenge your decisions/plans/goals from different angles, forcing you to confront problems and risks you're afraid to admit.
 
 ### 5 Critical Roles
 
-| Role | Responsibility | Key Question |
-|------|---------------|--------------|
-| 🤔 **Socratic Questioner** | Force you to clarify vague requirements | Have you really thought this through? |
-| 🔥 **Harsh Reviewer** | No emotional support, only point out fatal flaws | What are the critical defects? |
-| 💰 **Biased Investor** | Question feasibility and ROI | Why shouldn't I invest in you? |
-| ⚰️ **Death Researcher** | Analyze similar failed attempts | How did others die in this space? |
-| ⏰ **Regretful Future You** | Write a warning letter from 5 years ahead | What will you regret? |
+| Role | Responsibility | Key Question | Known For |
+|------|---------------|--------------|-----------|
+| 🤔 **Socrates** | Force you to clarify vague requirements | Have you really thought this through? | Socratic Method |
+| 🔥 **Steve Jobs** | No emotional support, only point out fatal flaws | This is shit | Product Perfectionism |
+| 💰 **Charlie Munger** | Question feasibility and ROI | Invert, always invert | Mental Models |
+| ⚰️ **Nassim Taleb** | Analyze similar failed attempts | Fragile things break under pressure | The Black Swan, Antifragile |
+| ⏰ **Jeff Bezos** | Write a warning letter from the future | What will you regret at 80? | Regret Minimization Framework |
 
 ### Use Cases
 
@@ -154,9 +164,11 @@ Use 5 critical roles to challenge your decisions/plans/goals from different angl
    ```
    Use absolute rational critique to analyze this plan: [your plan]
    ```
-   or
+   or specify a role:
    ```
-   Use investor perspective to critique: [your business plan]
+   Use Steve Jobs' perspective to critique this product plan
+   Use Charlie Munger's perspective to analyze this business plan
+   Use Nassim Taleb's perspective to research failure patterns
    ```
 
 3. **See Examples**: Check `examples/example-critique.md` for a complete AI writing assistant product critique
@@ -176,6 +188,14 @@ Use 5 critical roles to challenge your decisions/plans/goals from different angl
 - Tech Leads (technology selection, architecture design)
 - Investment Decision Makers (project evaluation, risk analysis)
 - Anyone making important decisions
+
+### Why These 5 People?
+
+- **Socrates**: Founder of Western philosophy, master of questioning
+- **Steve Jobs**: Icon of product perfectionism, known for uncompromising standards
+- **Charlie Munger**: Buffett's partner, master of inversion and mental models
+- **Nassim Taleb**: Risk expert, author of The Black Swan and Antifragile
+- **Jeff Bezos**: Long-term thinker, creator of the Regret Minimization Framework
 
 ### Contributing
 
@@ -205,3 +225,7 @@ AI Product Expert, Former AI Lead at Tencent/Baidu
   - 5 个批判角色 | 5 critical roles
   - 完整示例 | Complete examples
   - 中英文文档 | Chinese and English documentation
+
+- **v1.1.0** (2026-07-03) - 角色更新 | Role update
+  - 所有角色改为历史名人 | All roles changed to historical figures
+  - 苏格拉底、乔布斯、芒格、塔勒布、贝索斯 | Socrates, Jobs, Munger, Taleb, Bezos
