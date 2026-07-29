@@ -1,231 +1,204 @@
-# Andy 绝对理性批判 Skill
+<div align="center">
 
-> 让 AI 泼冷水的 5 个反向 prompt — 用批判性思维挖掘决策盲区
+# DissSkill
 
-[English](#english) | [中文](#中文)
+### 你的 AI 什么都说好。DissSkill 专门问：然后呢？
+
+把 AI 从“情绪价值供应商”，变成你的决策压力测试器。
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
+![Works with Codex](https://img.shields.io/badge/works%20with-Codex-0A7C66.svg)
+![Works with Claude](https://img.shields.io/badge/works%20with-Claude-D97757.svg)
+
+[快速开始](#30-秒开-diss) · [它有什么用](#它到底有什么用) · [看一次实战](#一次典型的-diss) · [English](#english)
+
+</div>
 
 ---
 
-## 中文
+你：我有一个绝妙的产品想法。
 
-### 核心理念
+普通 AI：太棒了！这是一个非常有潜力的方向！
 
-**给 AI 一个有立场、对你不友好的身份 — 它的能力量级被解锁。**
+**DissSkill：绝妙到什么程度？有三个用户愿意付钱，还是有三十个朋友给你点赞？**
 
-通过 5 个历史名人的批判性视角，从不同维度质疑你的决策/计划/目标，逼出你不敢承认的问题和隐藏风险。
+你：……
 
-### 5 个批判角色
+**DissSkill：很好，第一条市场数据已经有了。**
 
-| 角色 | 职责 | 关键问题 | 代表作 |
-|------|------|---------|--------|
-| 🤔 **苏格拉底**<br/>Socrates | 逼你把模糊需求说清楚 | 你真的想清楚了吗？ | 苏格拉底式提问法 |
-| 🔥 **乔布斯**<br/>Steve Jobs | 不给情绪价值，只指硬伤 | 这是狗屎（This is shit） | 极致产品主义 |
-| 💰 **芒格**<br/>Charlie Munger | 质疑可行性和 ROI | 反过来想，总是反过来想 | 多元思维模型 |
-| ⚰️ **塔勒布**<br/>Nassim Taleb | 分析同类尝试的失败案例 | 脆弱的东西会崩溃 | 《黑天鹅》《反脆弱》 |
-| ⏰ **贝索斯**<br/>Jeff Bezos | 站在未来视角写警告信 | 80岁时你会后悔什么？ | 后悔最小化框架 |
+> 不是为了把你骂醒，是为了让最便宜的失败发生在开工之前。
 
-### 使用场景
+## 它到底有什么用？
 
-- 🚀 产品立项前的理性质疑
-- 💼 商业计划的投资人视角审查
-- 📋 项目方案的风险评估
-- 🎯 重大决策前的盲点挖掘
-- 🔧 技术选型的死法研究
+做决定时，最危险的往往不是没有答案，而是太快得到一个顺耳的答案。
 
-### 快速开始
+DissSkill 用 5 种对抗性视角拆你的产品、项目、商业计划或重大选择，专门寻找：
 
-1. **安装**：将此 Skill 复制到你的 Claude Skills 目录（通常是 `~/.claude/skills/`）
+- 被热情藏起来的关键假设
+- 一算 ROI 就站不住的伪需求
+- “大家都这么做”背后的集体盲区
+- 现在不验证、以后会很贵的风险
+- 看起来很忙，实际没有推进的下一步
 
-2. **使用**：在与 Claude 的对话中：
-   ```
-   用绝对理性批判分析这个计划：[你的计划]
-   ```
-   或指定特定角色：
-   ```
-   用乔布斯视角批判这个产品方案
-   用芒格视角分析这个商业计划
-   用塔勒布视角研究这个赛道的死法
-   ```
+最后得到的不是一盆冷水，而是一份可执行的压力测试报告：
 
-3. **查看示例**：参考 `examples/example-critique.md`，里面有完整的 AI 写作助手产品批判案例
-
-### 文件结构
-
+```text
+事实 / 判断 / 假设
+        ↓
+高风险 / 中风险 / 低风险
+        ↓
+待验证问题 + 最小验证动作
 ```
-andy-absolute-rational-critique-skill/
-├── README.md                   # 本文件
-├── SKILL.md                    # 详细使用指南
-├── role-1-socratic.md          # 苏格拉底
-├── role-2-steve-jobs.md        # 乔布斯
-├── role-3-charlie-munger.md    # 芒格
-├── role-4-nassim-taleb.md      # 塔勒布
-├── role-5-jeff-bezos.md        # 贝索斯
+
+一句话：**先 Diss 决策，再为决策买单。**
+
+## 五人拆台办
+
+| 视角 | 专门拆什么 | 它会追问 |
+| --- | --- | --- |
+| **苏格拉底** | 模糊定义与隐藏假设 | “你说的需求，到底是谁的需求？” |
+| **乔布斯** | 产品硬伤与伪差异化 | “如果只能保留一个价值，它是哪一个？” |
+| **芒格** | 可行性、激励与 ROI | “反过来想，这件事最容易怎么失败？” |
+| **塔勒布** | 脆弱性与小概率重击 | “哪个意外一来，你就直接出局？” |
+| **未来视角** | 长期代价与后悔 | “一年后回头看，你最可能后悔没验证什么？” |
+
+这些名字代表思维框架，不是名人模仿秀。DissSkill 批判的是决策，不是人。
+
+## 30 秒开 Diss
+
+### Codex
+
+```bash
+mkdir -p ~/.codex/skills && git clone https://github.com/AIPMAndy/DissSkill.git ~/.codex/skills/diss-skill
+```
+
+### Claude Code
+
+```bash
+mkdir -p ~/.claude/skills && git clone https://github.com/AIPMAndy/DissSkill.git ~/.claude/skills/diss-skill
+```
+
+安装后开启一个新对话，直接说：
+
+```text
+用 DissSkill 拆一下这个方案：[粘贴你的方案]
+```
+
+也可以把刀递得更准一点：
+
+```text
+别夸我。用 DissSkill 找出这个产品最可能失败的 3 个原因。
+用芒格视角算一遍这个商业计划的 ROI 和激励错位。
+用塔勒布视角找出这个技术方案最脆弱的环节。
+让未来的我给现在写一封后悔信，然后给出本周能做的验证动作。
+```
+
+> 已安装旧版？旧触发词“绝对理性批判”仍然有效。
+
+## 一次典型的 Diss
+
+**原计划：**
+
+> 做一个 AI 写作助手，三个月上线，先把功能做全，再开始找用户。
+
+**普通 AI 可能会给你：**
+
+> 这是一个充满潜力的方向。建议先规划编辑器、素材库、多模型和会员系统。
+
+**DissSkill 会先问：**
+
+- **高风险：** 需求未经验证，“功能做全”可能只是把未知成本做全。
+- **致命假设：** 用户缺的是另一个写作工具，而不是分发、选题或稳定产出。
+- **竞争压力：** 通用模型已经覆盖基础写作，差异化尚未成立。
+- **最小验证：** 暂停完整开发，用 7 天访谈 10 个目标用户，并尝试收取 3 笔订金。
+- **停止条件：** 没有人愿意交付真实素材或付费，就不要用更多功能掩盖需求问题。
+
+它不会替你做决定。它只负责让你在做决定之前，看见账单。
+
+完整案例见 [examples/example-critique.md](examples/example-critique.md)。
+
+## 什么时候最值得用？
+
+- 产品立项：这个需求是真需求，还是创始人的自我感动？
+- 商业计划：收入写了三页，获客成本为什么只写了一行？
+- 功能排期：用户要的是这个功能，还是团队刚好会做这个功能？
+- 技术选型：我们在解决问题，还是在收藏新框架？
+- 重大决策：现在的兴奋，能不能扛住三个月后的代价？
+
+不适合拿来做什么：人身攻击、替代专业法律/医疗/财务意见，以及在信息不足时假装确定。
+
+## 为什么不是“再写一个 Prompt”？
+
+单条 Prompt 容易得到一段看起来很聪明的反对意见。DissSkill 把批判变成固定流程：
+
+1. 先补齐目标、资源、时间与成功标准。
+2. 用五个互补视角依次施压，避免只有一种偏见。
+3. 区分事实、判断与假设，并标注置信度。
+4. 合并重复风险，按严重程度排序。
+5. 把批判收束成可验证、可停止、可执行的下一步。
+
+所以它的价值不是“更会喷”，而是**让批判最终落到行动上**。
+
+## 仓库结构
+
+```text
+DissSkill/
+├── SKILL.md                    # 核心工作流与触发说明
+├── role-1-socratic.md          # 苏格拉底：澄清假设
+├── role-2-steve-jobs.md        # 产品硬伤：聚焦价值
+├── role-3-charlie-munger.md    # 芒格：反向思考与 ROI
+├── role-4-nassim-taleb.md      # 塔勒布：脆弱性与失败模式
+├── role-5-jeff-bezos.md        # 未来视角：长期代价与后悔
 └── examples/
-    └── example-critique.md     # 完整示例
+    └── example-critique.md      # 完整实战案例
 ```
 
-### 输出特点
+## 参与改进
 
-- ✅ 区分**事实/判断/假设**
-- ✅ 标注**置信度**（高/中/低）
-- ✅ 提供**待验证清单**
-- ✅ 给出**可行动建议**
-- ✅ 基于**五理论框架**（熵增、还原、矛盾、试错、概率）
+真实世界不缺好点子，缺的是经得起坏消息的好点子。
 
-### 示例输出
+欢迎提交 Issue 或 Pull Request：
 
-完整示例见 `examples/example-critique.md`，以下是摘要：
+- 提供一个被 DissSkill 救下或劝退的真实案例
+- 改进某个角色的追问框架
+- 补充可验证的失败模式
+- 增加新的语言版本
 
-**原始决策**：做一个 AI 写作助手产品
-
-**批判结果**：
-- 🔴 **高风险**：市场需求未验证、没有差异化护城河、被 ChatGPT 碾压风险
-- 🟡 **中风险**：时间预估过于乐观、资源配置不足、团队配置不完整
-- ❓ **待验证**：用户真的需要吗？愿意付费吗？能按时完成吗？
-- 💡 **下一步**：停止开发，先验证市场（访谈 50 个用户）
-
-### 适用人群
-
-- 创业者（产品立项、商业计划）
-- 产品经理（功能决策、优先级排序）
-- 技术负责人（技术选型、架构设计）
-- 投资决策者（项目评估、风险分析）
-- 任何需要做重大决策的人
-
-### 原理
-
-基于认知科学和决策理论：
-- **认知偏差纠正**：对抗确认偏见、乐观偏见、沉没成本谬误
-- **多视角思考**：强制从 5 个不同角色审视同一问题
-- **前瞻性后悔**：用"未来后悔"激活损失厌恶心理
-- **历史教训**：用失败案例对抗"我会不一样"的幻觉
-
-### 为什么选这 5 个人？
-
-- **苏格拉底**：西方哲学奠基人，提问法大师
-- **乔布斯**：极致产品主义代表，以严苛著称
-- **芒格**：巴菲特黄金搭档，反向思维大师
-- **塔勒布**：风险研究专家，《黑天鹅》作者
-- **贝索斯**：长期主义代表，后悔最小化框架创始人
-
-### 贡献
-
-欢迎贡献：
-- 提交新的批判角色
-- 分享真实案例
-- 改进现有角色的追问框架
-- 翻译到其他语言
-
-请通过 Issue 或 Pull Request 参与。
-
-### 许可证
-
-MIT License - 详见 [LICENSE](LICENSE)
-
-### 作者
-
-Andy ([@AIPMAndy](https://github.com/AIPMAndy))
-
-AI 产品专家，前腾讯/百度 AI 负责人
-
----
+觉得它有用，可以点一个 Star。觉得它没用，也欢迎开 Issue 来 Diss 它。
 
 ## English
 
-### Core Concept
+### Your AI says yes. DissSkill asks, “Then what?”
 
-**Give AI a stance and an adversarial identity — unlock its true potential.**
+DissSkill turns an agreeable AI assistant into a decision stress tester. It applies five adversarial lenses to products, plans, business cases, technical choices, and other high-stakes decisions.
 
-Use 5 historical figures' critical perspectives to challenge your decisions/plans/goals from different angles, forcing you to confront problems and risks you're afraid to admit.
+Instead of generic criticism, it returns:
 
-### 5 Critical Roles
+- hidden assumptions and failure modes
+- risks ranked by severity and confidence
+- facts separated from judgments and guesses
+- concrete validation steps and stop conditions
 
-| Role | Responsibility | Key Question | Known For |
-|------|---------------|--------------|-----------|
-| 🤔 **Socrates** | Force you to clarify vague requirements | Have you really thought this through? | Socratic Method |
-| 🔥 **Steve Jobs** | No emotional support, only point out fatal flaws | This is shit | Product Perfectionism |
-| 💰 **Charlie Munger** | Question feasibility and ROI | Invert, always invert | Mental Models |
-| ⚰️ **Nassim Taleb** | Analyze similar failed attempts | Fragile things break under pressure | The Black Swan, Antifragile |
-| ⏰ **Jeff Bezos** | Write a warning letter from the future | What will you regret at 80? | Regret Minimization Framework |
+Install for Codex:
 
-### Use Cases
+```bash
+mkdir -p ~/.codex/skills && git clone https://github.com/AIPMAndy/DissSkill.git ~/.codex/skills/diss-skill
+```
 
-- 🚀 Critical questioning before product launch
-- 💼 Investor-perspective review of business plans
-- 📋 Risk assessment of project proposals
-- 🎯 Blind spot discovery before major decisions
-- 🔧 Death research for technology choices
+Install for Claude Code:
 
-### Quick Start
+```bash
+mkdir -p ~/.claude/skills && git clone https://github.com/AIPMAndy/DissSkill.git ~/.claude/skills/diss-skill
+```
 
-1. **Install**: Copy this skill to your Claude Skills directory (usually `~/.claude/skills/`)
+Then start a fresh conversation and say:
 
-2. **Use**: In your conversation with Claude:
-   ```
-   Use absolute rational critique to analyze this plan: [your plan]
-   ```
-   or specify a role:
-   ```
-   Use Steve Jobs' perspective to critique this product plan
-   Use Charlie Munger's perspective to analyze this business plan
-   Use Nassim Taleb's perspective to research failure patterns
-   ```
+```text
+Use DissSkill to find the three most likely ways this plan fails: [your plan]
+```
 
-3. **See Examples**: Check `examples/example-critique.md` for a complete AI writing assistant product critique
+DissSkill critiques the decision, not the person. It does not replace professional legal, medical, or financial advice.
 
-### Features
+## License & Author
 
-- ✅ Distinguish **facts/judgments/assumptions**
-- ✅ Mark **confidence levels** (high/medium/low)
-- ✅ Provide **verification checklists**
-- ✅ Give **actionable recommendations**
-- ✅ Based on **Five Theory Framework** (entropy, reductionism, contradiction, trial-error, probability)
-
-### Who Is This For
-
-- Entrepreneurs (product launch, business plans)
-- Product Managers (feature decisions, prioritization)
-- Tech Leads (technology selection, architecture design)
-- Investment Decision Makers (project evaluation, risk analysis)
-- Anyone making important decisions
-
-### Why These 5 People?
-
-- **Socrates**: Founder of Western philosophy, master of questioning
-- **Steve Jobs**: Icon of product perfectionism, known for uncompromising standards
-- **Charlie Munger**: Buffett's partner, master of inversion and mental models
-- **Nassim Taleb**: Risk expert, author of The Black Swan and Antifragile
-- **Jeff Bezos**: Long-term thinker, creator of the Regret Minimization Framework
-
-### Contributing
-
-Contributions welcome:
-- Submit new critical roles
-- Share real-world cases
-- Improve existing role frameworks
-- Translate to other languages
-
-Participate via Issues or Pull Requests.
-
-### License
-
-MIT License - see [LICENSE](LICENSE)
-
-### Author
-
-Andy ([@AIPMAndy](https://github.com/AIPMAndy))
-
-AI Product Expert, Former AI Lead at Tencent/Baidu
-
----
-
-## 版本历史 | Version History
-
-- **v1.0.0** (2026-07-03) - 初始版本 | Initial release
-  - 5 个批判角色 | 5 critical roles
-  - 完整示例 | Complete examples
-  - 中英文文档 | Chinese and English documentation
-
-- **v1.1.0** (2026-07-03) - 角色更新 | Role update
-  - 所有角色改为历史名人 | All roles changed to historical figures
-  - 苏格拉底、乔布斯、芒格、塔勒布、贝索斯 | Socrates, Jobs, Munger, Taleb, Bezos
+[MIT License](LICENSE) · Created by Andy ([@AIPMAndy](https://github.com/AIPMAndy))
